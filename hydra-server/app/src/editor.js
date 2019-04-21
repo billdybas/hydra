@@ -25,6 +25,14 @@ var EditorClass = function () {
             // }
           })
       },
+      'Shift-Cmd-Enter': function (instance) {
+        self.evalAll((code, error) => {
+          console.log('evaluated', code, error)
+          // if(!error){
+          //   self.saveSketch(code)
+          // }
+        })
+      },
       'Shift-Ctrl-G': function (instance) {
         self.shareSketch()
       },
